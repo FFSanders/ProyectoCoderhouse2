@@ -1,0 +1,85 @@
+.torneo{
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 15px auto;
+    box-shadow: $box-shadow;
+    img{
+        margin-top: -50px;
+        margin-left: 15px;
+        height: 170px;
+        border-radius: 10px;
+}
+}
+
+#inscribite{
+    color: black;
+    background-color: #FAF78B;
+    border-radius: 30px;
+    border: none;
+    padding: 7px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+//TABLET-MODO VERTICAL
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait)
+{
+    .torneo h1{
+        font-size: 40px;
+    }
+    .torneo p{
+        font-size: 25px;
+    }
+    
+    .premios li{
+        font-size: 20px;
+    }
+    
+    .torneo h2{
+        font-size: 40px;
+    }
+    
+    .torneo img{
+        margin-top: -50px;
+        margin-left: 10px;
+        height: 200px;
+    }
+}
+
+//ESCRITORIO
+
+@media only screen
+and (min-width: 1025px)
+and (max-width: 2000px)
+{
+    .torneo{
+        width: 60%;
+    }
+    .torneo p{
+        font-size: 20px;
+    }
+    .premios h2{
+        font-size: 40px;
+    }
+    .premios li{
+        font-size: 20px;
+    }
+    .torneo img{
+        margin-left: 270px;
+        margin-top: -20px;
+        height: 300px;
+    }
+    #inscribite{
+        margin-left: 400px;
+        font-size: 18px;
+    }
+    #inscribite:hover{
+        background-color: yellow;
+    }
+}

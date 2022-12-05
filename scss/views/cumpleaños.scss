@@ -1,0 +1,99 @@
+.cumpleaños{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 15px auto;
+    box-shadow: $box-shadow;
+        h1{
+            font-size: size(4);
+            position: relative;
+        }
+        p{
+            margin-top: 130px;
+            margin-left: -220px;
+        }
+}
+
+.formulario2{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 15px auto;
+    box-shadow: $box-shadow;
+}
+
+//TABLET-MODO HORIZONTAL
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: landscape)
+{
+    .cumpleaños h1{
+        position: absolute;
+    }
+    .cumpleaños p{
+        margin-top: 45px;
+        margin-left: 5px;
+    }
+}
+
+//TABLET-MODO VERTICAL
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait)
+{   
+    .cumpleaños{
+        margin-top: 70px;
+    }
+    .cumpleaños h1{
+        font-size: size(5);
+        position: absolute;
+    }
+    .cumpleaños p{
+        font-size: size(2);
+        margin-top: 50px;
+        margin-left: 5px;
+    }
+    .formulario2{
+        margin-top: 90px;
+    }
+    .formulario2 h2{
+        font-size: size(5);
+    }
+}
+
+//ESCRITORIO
+
+@media only screen
+and (min-width: 1025px)
+and (max-width: 2000px)
+{
+    .cumpleaños{
+        width: 40%;
+        margin-top: 50px;
+    }
+    .cumpleaños h1{
+        font-size: size(4);
+        position: absolute;
+    }
+    .cumpleaños p{
+        font-size: size(3);
+        margin-top: 55px;
+        margin-left: 5px;
+    }
+    .formulario2{
+        margin-top: 90px;
+    }
+    .formulario2 h2{
+        font-size: size(5);
+    }
+}

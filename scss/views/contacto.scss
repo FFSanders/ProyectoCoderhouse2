@@ -1,0 +1,50 @@
+#sede1{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 15px auto;
+    box-shadow: $box-shadow;
+}
+
+#sede2{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 15px auto;
+    box-shadow: $box-shadow;
+}
+
+//TABLET-MODO VERTICAL
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait)
+{
+    #sede1{
+        margin-top: 50px;
+    }
+    #sede2{
+        margin-top: 110px;
+    }
+}
+
+//ESCRITORIO
+
+@media only screen
+and (min-width: 1025px)
+and (max-width: 2000px)
+{
+    #sede1{
+        margin-top: 40px;    
+    }
+    #sede2{
+        margin-top: 60px;
+    }
+}
+

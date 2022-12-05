@@ -1,0 +1,72 @@
+.torneoinfo{
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 15px auto;
+    box-shadow: $box-shadow;
+    h1{
+        font-weight: bold;
+}
+}
+
+.formulario1{
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 15px auto;
+    box-shadow: $box-shadow;
+}   
+
+//TABLET- MODO HORIZONTAL
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: landscape)
+{ 
+    .torneoinfo p{
+        font-size: 18px;
+    }
+    
+    .formulario1{
+        font-size: 20px;
+    }
+}
+
+//TABLET-MODO VERTICAL
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait)
+{
+    .torneoinfo{
+        margin-top: 100px;
+    }
+    .formulario1{
+        margin-top: 190px;
+    }
+}
+
+//ESCRITORIO
+
+@media only screen
+and (min-width: 1025px)
+and (max-width: 2000px)
+{
+    .torneoinfo {
+        width: 50%;
+    }
+    .torneoinfo p{
+        font-size: 30px;
+    }
+    .formulario1{
+        font-size: 20px;
+        width: 40%;
+    }
+    .formulario1 h2{
+        font-size: 50px;
+    }
+}

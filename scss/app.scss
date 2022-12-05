@@ -1,0 +1,22 @@
+//utilities
+@import './utilities/variables.scss';
+@import './utilities/functions.scss';
+@import './utilities/mixins.scss';
+
+//base
+@import './base/global.scss';
+@import './base/color.scss';
+@import './base/typo.scss';
+
+//layout
+@import './layout/header.scss';
+@import './layout/footer.scss';
+@import './layout/forms.scss';
+
+//views
+@import './views/index.scss';
+@import './views/torneo.scss';
+@import './views/sedes.scss';
+@import './views/contacto.scss';
+@import './views/inscribite.scss';
+@import './views/cumpleaños.scss';
