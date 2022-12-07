@@ -12,7 +12,7 @@ header {
   header a img {
     height: 50px; }
 
-@media only screen and (min-width: 1025px) and (max-width: 2000px) {
+@media only screen and (min-width: 1900px) {
   header li a:hover {
     background: #FAF78B;
     transition: .5s; }
@@ -44,11 +44,11 @@ footer {
   .footer img {
     width: 45px;
     height: 45px;
-    margin-left: 735px; }
+    margin-left: 505px; }
   .footer p {
     padding: 5px;
     margin-top: -15px;
-    margin-left: 780px;
+    margin-left: 545px;
     font-size: 15px; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
@@ -62,7 +62,15 @@ footer {
     margin-left: 550px;
     font-size: 16px; } }
 
-@media only screen and (min-width: 1025px) and (max-width: 2000px) {
+@media only screen and (min-width: 1200px) {
+  .footer img {
+    margin-left: 950px; }
+  .footer p {
+    margin-left: 1000px;
+    margin-top: -10px;
+    font-weight: bolder; } }
+
+@media only screen and (min-width: 1900px) {
   .footer img {
     width: 45px;
     height: 45px;
@@ -86,7 +94,6 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  width: 100%;
   border-radius: 20px;
   margin: 15px auto;
   box-shadow: 10px 10px 10px 0 0 0 0.5; }
@@ -157,6 +164,17 @@ main {
     margin-top: -250px;
     margin-left: 90px; } }
 
+@media only screen and (min-width: 768px) {
+  .nosotros img {
+    margin-left: 200px; }
+  .precio h2 {
+    margin-left: -320px; }
+  .precio ul li {
+    margin-left: -315px; }
+  .informacion img {
+    margin-top: -280px;
+    height: 200px; } }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .nosotros img {
     position: relative;
@@ -175,7 +193,28 @@ main {
     margin-top: -270px;
     margin-left: -150px; } }
 
-@media only screen and (min-width: 1025px) and (max-width: 2000px) {
+@media only screen and (min-width: 1199px) {
+  .nosotros {
+    width: 50%; }
+  .nosotros p {
+    width: 40%; }
+  .nosotros img {
+    height: 250px;
+    margin-top: 280px;
+    margin-left: 10px; }
+  .informacion {
+    width: 50%; }
+  .precio h2 {
+    margin-left: -520px; }
+  .precio ul li {
+    margin-left: -515px; }
+  .informacion img {
+    position: relative;
+    margin-left: -350px; } }
+
+@media only screen and (min-width: 1900px) {
+  .body {
+    width: 100%; }
   .nosotros {
     display: flex;
     padding: 15px;
@@ -239,7 +278,7 @@ main {
     margin-left: 10px;
     height: 200px; } }
 
-@media only screen and (min-width: 1025px) and (max-width: 2000px) {
+@media only screen and (min-width: 1900px) {
   .torneo {
     width: 60%; }
   .torneo p {
@@ -395,7 +434,19 @@ main {
   .formulario2 h2 {
     font-size: 40px; } }
 
-@media only screen and (min-width: 1025px) and (max-width: 2000px) {
+@media only screen and (min-width: 1200px) {
+  .cumpleaños {
+    width: 50%; }
+  .cumpleaños h1 {
+    font-size: 32px;
+    position: absolute; }
+  .cumpleaños p {
+    font-size: 24px;
+    width: 80%;
+    margin-left: 45px;
+    margin-top: 55px; } }
+
+@media only screen and (min-width: 1900px) {
   .cumpleaños {
     width: 40%;
     margin-top: 50px; }

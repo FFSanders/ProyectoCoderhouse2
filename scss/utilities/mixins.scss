@@ -1,0 +1,9 @@
+@mixin fondoBlanco{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 15px auto;
+    box-shadow: $box-shadow;
+}

@@ -7,14 +7,7 @@ main{
 }
 
 .nosotros{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    width: 100%;
-    border-radius: 20px;
-    margin: 15px auto;
-    box-shadow: $box-shadow;
+    @include fondoBlanco;
     img{
         display: flex;
         position: relative;
@@ -104,6 +97,24 @@ and (orientation: landscape)
     }
 }
 
+// 
+
+@media only screen
+and (min-width: 768px){
+    .nosotros img{
+        margin-left: 200px;
+    }
+    .precio h2{
+        margin-left: -320px;
+    }
+    .precio ul li{
+        margin-left: -315px;
+    }
+    .informacion img{
+        margin-top: -280px;
+        height: 200px;
+    }
+}
 //TABLET-MODO VERTICAL
 
 @media only screen
@@ -133,12 +144,44 @@ and (orientation: portrait)
     }
 }
 
-//ESCRITORIO
+//ESCRITORIO-1
+@media only screen
+and (min-width: 1199px)
+{
+    .nosotros{
+        width: 50%;
+    }
+    .nosotros p{
+        width: 40%;
+    }
+    .nosotros img{
+        height: 250px;
+        margin-top: 280px;
+        margin-left: 10px;
+    }
+    .informacion{
+        width: 50%;
+    }
+    .precio h2{
+        margin-left: -520px;
+    }
+    .precio ul li{
+        margin-left: -515px;
+    }
+    .informacion img{
+        position: relative;
+        margin-left: -350px;
+    }
+}
+
+//ESCRITORIO-2
 
 @media only screen
-and (min-width: 1025px)
-and (max-width: 2000px)
+and (min-width: 1900px)
 {
+    .body{
+        width: 100%;
+    }
     .nosotros{
         display: flex;
         padding: 15px;

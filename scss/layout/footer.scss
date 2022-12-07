@@ -29,13 +29,12 @@ and (orientation: landscape)
     .footer img{
         width: 45px;
         height: 45px;
-        margin-left: 735px;
+        margin-left: 505px;
     }
-        
     .footer p{
         padding: 5px;
         margin-top: -15px;
-        margin-left: 780px;
+        margin-left: 545px;
         font-size: 15px;
     }
 }
@@ -64,8 +63,22 @@ and (orientation: portrait)
 //ESCRITORIO
 
 @media only screen
-and (min-width: 1025px)
-and (max-width: 2000px)
+and (min-width: 1200px)
+{
+    .footer img{
+        margin-left: 950px;
+    }
+    .footer p{
+        margin-left: 1000px;
+        margin-top: -10px;
+        font-weight: bolder;
+    }
+}
+
+//ESCRITORIO-2
+
+@media only screen
+and (min-width: 1900px)
 {
     .footer img{
         width: 45px;
