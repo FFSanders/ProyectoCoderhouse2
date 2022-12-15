@@ -13,11 +13,11 @@ main{
         font-size: size(4);
     }
     img{
-        display: flex;
+        display:flex;
         position: relative;
-        height: 170px;
+        height: 240px;
         margin-top: 400px;
-        margin-left: -150px;
+        margin-left: -130px;
         border-radius: 10px;
     }
     p{
@@ -52,16 +52,6 @@ main{
     ul li{
         padding: auto;
 }
-}
-
-// Celular 2
-
-@media only screen and 
-(min-widht: 400px)
-{
-    .nosotros img{
-        height: 20px;
-    }
 }
 
 //TABLET-MODO HORIZONTAL
