@@ -8,24 +8,23 @@ main{
 
 .nosotros{
     @include fondoBlanco;
-    img{
-        display: flex;
-        position: relative;
-        height: 150px;
-        margin-top: 360px;
-        margin-right: 350px;
-        border-radius: 10px;
-    }
     h1{
         font-weight: bolder;
         font-size: size(4);
     }
+    img{
+        display: flex;
+        position: relative;
+        height: 170px;
+        margin-top: 400px;
+        margin-left: -150px;
+        border-radius: 10px;
+    }
     p{
         position: absolute;
-        width: 300px;
-        margin-top: 100px;
+        width: 70%;
+        margin-top: 70px;
     }
-
 }
 
 .informacion{
@@ -38,10 +37,9 @@ main{
     margin: 15px auto;
     box-shadow: $box-shadow;
     img{
-        position: relative;
         height: 150px;
-        margin-top: 20px;
-        margin-left: -130px;
+        margin-top: 200px;
+        margin-left: -150px;
         border-radius: 10px;
     }    
 }
@@ -52,21 +50,18 @@ main{
     padding: 10px;
     font-weight: bold;
     ul li{
-        position: relative;
         padding: auto;
 }
 }
 
-.precio h2{
-    padding: 10px;
-    font-size: size(4);
-    font-weight: bold;
-    margin-top: 250px;
-    margin-left: -160px;
-    ul li{
-        position: relative;
-        margin-right: -150px;
-}
+// Celular 2
+
+@media only screen and 
+(min-widht: 400px)
+{
+    .nosotros img{
+        height: 20px;
+    }
 }
 
 //TABLET-MODO HORIZONTAL
@@ -76,23 +71,26 @@ and (min-width: 768px)
 and (max-width: 1024px)
 and (orientation: landscape)
 {
+    .nosotros{
+        width: 65%;
+    }
+    .nosotros p{    
+        margin-top: 80px;
+        width: 30%;
+    }
     .nosotros img{
         position: relative;
-        height: 300px;
-        margin-top: 75px;
-        margin-right: 150px;
+        height: 270px;
+        margin-top: 50px;
+        margin-left: 2500px;
     }
-    .precio h2{
-            margin-top: 200px;
-            margin-left: -490px;
-        }
-    .precio ul li{
-            margin-left: -490px;
-        }
-    .informacion img{
+    .informacion{
+        width: 65%;
+    }
+    #img2{
         position: relative;
-        height: 250px;
-        margin-top: -250px;
+        height: 200px;   
+        margin-top: 10px;
         margin-left: 90px;
     }
 }
@@ -103,12 +101,6 @@ and (orientation: landscape)
 and (min-width: 768px){
     .nosotros img{
         margin-left: 200px;
-    }
-    .precio h2{
-        margin-left: -320px;
-    }
-    .precio ul li{
-        margin-left: -315px;
     }
     .informacion img{
         margin-top: -280px;
@@ -122,55 +114,67 @@ and (min-width: 768px)
 and (max-width: 1024px)
 and (orientation: portrait)
 {
+    .nosotros{
+        width: 85%;
+        margin-top: 90px;
+    }
+    .nosotros p{
+        width: 40%;
+        margin-top: 80px;
+    }
     .nosotros img{
         position: relative;
         height: 250px;
-        margin-top: 100px;
-        margin-right: 80px;
+        margin-top: 70px;
+        margin-right: 150px;
     }
-    .precio h2{
-        margin-top: 200px;
-        margin-left: -475px;
-        font-size: 25px;
+    .informacion{
+        width: 85%;
+        margin-top: 105px;
     }
-    .precio ul li{
-        margin-left: -470px;
+    .horarios li{
+        font-size: 15px;
     }
     .informacion img{
         position: relative;
-        height: 250px;
-        margin-top: -270px;
+        height: 200px;
+        margin-top: 10px;
         margin-left: -150px;
     }
 }
 
 //ESCRITORIO-1
 @media only screen
-and (min-width: 1199px)
+and (min-width: 1200px)
 {
+    .nosotros h1{
+        position: absolute;
+    }
     .nosotros{
-        width: 50%;
+        width: 60%;
     }
     .nosotros p{
-        width: 40%;
+        position: relative;
+        width: 45%;
+        margin-right: 300px;
+        font-size: 20px;
     }
     .nosotros img{
-        height: 250px;
-        margin-top: 280px;
-        margin-left: 10px;
+        position: absolute;
+        height: 320px;
+        margin-top: 70px;
+        margin-left: 330px;
     }
     .informacion{
         width: 50%;
     }
-    .precio h2{
-        margin-left: -520px;
-    }
-    .precio ul li{
-        margin-left: -515px;
+    .horarios li{
+        font-size: 20px;
     }
     .informacion img{
         position: relative;
-        margin-left: -350px;
+        margin-top: 10px;
+        margin-left:40px;
     }
 }
 
@@ -185,35 +189,32 @@ and (min-width: 1900px)
     .nosotros{
         display: flex;
         padding: 15px;
-        width: 50%;
         border-radius: 20px;
         margin: 15px auto;
+        width: 50%;
     }
-    .nosotros:hover{
-        transform: scale(1.1);
+    .nosotros p{
+        position: absolute;
+        width: 25%;
+        font-size: 24px;
+        margin-top: 37px;
     }
     .nosotros img{
-        height: 450px;
-        margin-top: 70px;
-        margin-right: 100px;
+        position: relative;
+        height: 350px;
+        margin-top: 40px;
+        margin-left: 520px;
     }
     .informacion{
         width: 50%;
     }
-    .precio h2{
-        margin-top: 200px;
-        margin-left: -680px;
-    }
-    .precio ul li{
-        margin-left: -670px;
+    .horarios ul li{
+        font-size: 24px;
     }
     .informacion img{
         position: relative;
         height: 250px;
-        margin-top: -300px;
-        margin-left: -150px;
-    }
-    .informacion:hover{
-        transform: scale(1.1);
+        margin-top: 10px;
+        margin-left: -100px;
     }
 }

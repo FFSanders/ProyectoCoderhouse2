@@ -8,7 +8,7 @@
     img{
         margin-top: -50px;
         margin-left: 15px;
-        height: 170px;
+        height: 140px;
         border-radius: 10px;
 }
 }
@@ -21,6 +21,23 @@
     padding: 7px 15px;
     text-decoration: none;
     font-weight: bold;
+}
+
+// Celular 2
+
+//TABLET-MODO HORIZONTAL
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: landscape)
+{
+    .torneo p{
+        font-size: 20px;
+    }
+    .premios p{
+        font-size: 20px;
+    }
 }
 
 //TABLET-MODO VERTICAL
@@ -57,7 +74,15 @@ and (orientation: portrait)
 @media only screen
 and (min-width: 1200px)
 {
-
+    .torneo p{
+        font-size: 20px;
+    }
+    .premios p{
+        font-size: 20px;
+    }
+    .torneo img{
+        height: 200px;
+    }
 }
 
 //ESCRITORIO-2

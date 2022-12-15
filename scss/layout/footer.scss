@@ -4,17 +4,20 @@ footer{
     padding: 10px 0px;
     height: 110px;
     margin-top: auto;
+    nav{
+        font-size: 14px;
+    }
     img{
         display: inline-block;
         position: absolute;
         width: 45px;
         height: 45px;
-        margin-left: 225px;
+        margin-left: 190px;
     }
     p{
         padding: 5px;
         margin-top: -25px;
-        margin-left: 270px;
+        margin-left: 230px;
         font-size: 12px;
     }
 }
@@ -29,13 +32,14 @@ and (orientation: landscape)
     .footer img{
         width: 45px;
         height: 45px;
-        margin-left: 505px;
+        margin-left: 710px;
     }
     .footer p{
         padding: 5px;
         margin-top: -15px;
-        margin-left: 545px;
+        margin-left: 750px;
         font-size: 15px;
+        font-weight: bold;
     }
 }
 
@@ -49,13 +53,13 @@ and (orientation: portrait)
     .footer img{
         width: 45px;
         height: 45px;
-        margin-left: 505px;
+        margin-left: 510px;
     }
         
     .footer p{
         padding: 5px;
         margin-top: -20px;
-        margin-left: 550px;
+        margin-left: 555px;
         font-size: size(2);
     }
 }
